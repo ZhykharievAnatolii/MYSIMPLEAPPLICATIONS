@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form span {
+            color: red;
+        }
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<form action="#" name="nameCreate" novalidate>
+    <label>
+        <input type="text" name="name" placeholder="Enter new name" required data-min="4" data-max="16">
+        <span></span>
+    </label>
+    <label>
+        <input type="email" name="email" placeholder="Enter email" required data-min="6" data-max="20">
+        <span></span>
+    </label>
+    <button type="submit">
+        Send
+    </button>
+</form>
+<ul>
+
+</ul>
+
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
